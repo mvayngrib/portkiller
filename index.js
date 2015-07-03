@@ -21,7 +21,7 @@ if (!port) {
 var cp = require('child_process')
 var cmd = 'lsof -i:' + port
 cp.exec(cmd, function (err, stdout, stderr) {
-  if (err) throw err
+  if (err) return console.log('no matches')
   if (stderr) return stderr.pipe(process.stderr)
 
   var lines = String(stdout)
