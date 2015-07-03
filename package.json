@@ -1,0 +1,28 @@
+{
+  "author": "Mark Vayngrib <mark.vayngrib@lablz.com> (http://github.com/mvayngrib)",
+  "description": "kill processes using a given port that match given filters",
+  "devDependencies": {
+    "pre-commit": "latest",
+    "standard": "latest",
+    "tape": "latest"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "portkiller",
+  "pre-commit": [
+    "style"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "undefined"
+  },
+  "scripts": {
+    "style": "standard",
+    "test": "node test"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "run-parallel": "^1.1.2"
+  }
+}
