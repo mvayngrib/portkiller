@@ -6,6 +6,8 @@
     "standard": "latest",
     "tape": "latest"
   },
+  "bin": "./index.js",
+  "preferGlobal": true,
   "license": "ISC",
   "main": "index.js",
   "name": "portkiller",
